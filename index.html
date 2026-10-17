@@ -3,128 +3,184 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tahar Chalal - Plombier</title>
+    <title>Tahar Chalal — Plombier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="container nav">
-        <div class="logo">Tahar<span>Plombier</span></div>
+        <a href="index.html" class="logo">
+          <span class="logo-mark" aria-hidden="true"></span>
+          Taharplombier
+        </a>
         <nav>
           <a href="#services">Services</a>
-          <a href="#apropos">A propos</a>
-          <a href="#contact">Contact</a>
+          <a href="#apropos">À propos</a>
+          <a href="#contact">Contactez-nous</a>
         </nav>
         <a class="phone-btn" href="tel:0799298778">07 99 29 87 78</a>
       </div>
     </header>
 
     <section class="hero">
-      <div class="overlay"></div>
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-content">
         <div class="hero-text">
-          <h1>Votre Plombier de Confiance</h1>
-          <p>
+          <p class="brand-line">Tahar chalal</p>
+          <h1>Votre expert plombier</h1>
+          <p class="hero-lead">
             Intervention rapide 24h/24 et 7j/7 pour dépannage, installation et
             entretien.
           </p>
           <div class="hero-actions">
             <a href="tel:0799298778" class="btn primary">Appeler maintenant</a>
-            <a href="#services" class="btn secondary">Nos services</a>
+            <a href="#contact" class="btn secondary">Contactez-nous</a>
+            <a href="./contact.html" class="btn secondary">Demander un devis gratuit</a>
           </div>
           <ul class="hero-points">
             <li>Disponible 24/7</li>
             <li>Devis gratuit</li>
-            <li>Travail soigne</li>
+            <li>Travail soigné</li>
           </ul>
         </div>
-        <img
-          src="images/tahar-chalal.png"
-          alt="Tahar Chalal plombier"
-          class="hero-photo"
-        />
       </div>
     </section>
 
     <section id="services" class="section container">
-      <h2>Nos Services</h2>
-      <p class="section-subtitle">
-        Une gamme complete de services de plomberie pour particuliers et
-        professionnels.
-      </p>
+      <div class="section-head">
+        <h2>Nos services</h2>
+        <p class="section-subtitle">
+          Une gamme complète de services de plomberie pour particuliers et
+          professionnels.
+        </p>
+      </div>
       <div class="cards">
         <article class="card">
-          <h3>Depannage d'urgence</h3>
-          <p>Intervention rapide 24h/24 pour fuites et canalisations bouchees.</p>
+          <img
+            src="images/service-urgence.jpg"
+            alt="Dépannage plomberie urgence"
+            class="card-image"
+          />
+          <div class="card-body">
+            <h3>Dépannage d'urgence</h3>
+            <p>
+              Intervention rapide 24h/24 pour fuites et canalisations bouchées.
+            </p>
+          </div>
         </article>
         <article class="card">
-          <h3>Sanitaires et Robinetterie</h3>
-          <p>Installation et reparation de tous vos equipements sanitaires.</p>
+          <img
+            src="images/service-sanitaires.jpg"
+            alt="Sanitaires et salle de bain"
+            class="card-image"
+          />
+          <div class="card-body">
+            <h3>Sanitaires & robinetterie</h3>
+            <p>
+              Installation et réparation de tous vos équipements sanitaires.
+            </p>
+          </div>
         </article>
         <article class="card">
-          <h3>Chauffage</h3>
-          <p>Entretien, depannage et optimisation de vos systemes de chauffage.</p>
+          <img
+            src="images/service-chauffage.jpg"
+            alt="Chauffage et chaudière"
+            class="card-image"
+          />
+          <div class="card-body">
+            <h3>Chauffage</h3>
+            <p>
+              Entretien, dépannage et optimisation de vos systèmes de chauffage.
+            </p>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="apropos" class="section light">
+    <section id="apropos" class="section about-section">
       <div class="container about">
-        <div>
-          <h2>Votre Expert Plombier</h2>
+        <div class="about-copy">
+          <p class="eyebrow">À propos</p>
+          <h2>Votre expert plombier</h2>
           <p>
             Tahar Chalal intervient rapidement pour tous vos besoins en
-            plomberie. Service fiable, prix clairs et travail de qualite.
+            plomberie. Service fiable, prix clairs et travail de qualité.
           </p>
           <ul class="checks">
-            <li>Artisan certifie</li>
+            <li>Artisan certifié</li>
             <li>Intervention rapide</li>
             <li>Devis gratuit</li>
           </ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <strong>24/7</strong>
+            <span>Disponibilité</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Devis gratuit</span>
+          </div>
+          <div class="stat">
+            <strong>Pro</strong>
+            <span>Travail soigné</span>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section container">
-      <h2>Contactez-nous</h2>
-      <div class="contact-grid">
-        <div class="contact-cards">
-          <div class="info-box">
-            <h3>Telephone</h3>
-            <a href="tel:0799298778">0799298778</a>
+      <div class="section-head">
+        <h2>Contactez-nous</h2>
+        <p class="section-subtitle">
+          Appelez directement ou écrivez à Tahar Chalal.
+        </p>
+      </div>
+      <div class="contact-cards home-contact">
+        <div class="info-box">
+          <span class="info-icon" aria-hidden="true">☎</span>
+          <div>
+            <h3>Téléphone</h3>
+            <a href="tel:0799298778">07 99 29 87 78</a>
             <p>Disponible 24h/24 et 7j/7</p>
           </div>
-          <div class="info-box">
+        </div>
+        <div class="info-box">
+          <span class="info-icon" aria-hidden="true">✉</span>
+          <div>
             <h3>Email</h3>
             <a href="mailto:chalaltahar396@gmail.com">chalaltahar396@gmail.com</a>
-            <p>Reponse rapide</p>
-          </div>
-          <div class="info-box">
-            <h3>Nom</h3>
-            <p>Tahar Chalal</p>
-            <p>Plombier professionnel</p>
+            <p>Réponse rapide</p>
           </div>
         </div>
-        <form class="quote-form">
-          <h3>Demande de devis gratuit</h3>
-          <input type="text" placeholder="Nom complet" />
-          <input type="tel" placeholder="Telephone" />
-          <input type="email" placeholder="Email" />
-          <textarea rows="4" placeholder="Description du projet"></textarea>
-          <button type="button">Envoyer ma demande</button>
-        </form>
+        <div class="info-box">
+          <span class="info-icon" aria-hidden="true">★</span>
+          <div>
+            <h3>Devis</h3>
+            <a href="./contact.html" class="info-strong">Demander un devis gratuit</a>
+            <p>Formulaire sur la page devis</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container footer-grid">
         <div>
-          <h4>TaharPlombier</h4>
-          <p>Votre expert plombier. Intervention rapide et service de qualite.</p>
+          <h4>Tahar Chalal</h4>
+          <p>
+            Votre expert plombier. Intervention rapide et service de qualité.
+          </p>
         </div>
         <div>
           <h4>Services</h4>
-          <p>Depannage urgence</p>
+          <p>Dépannage urgence</p>
           <p>Installation sanitaires</p>
           <p>Chauffage</p>
         </div>
@@ -132,11 +188,29 @@
           <h4>Contact</h4>
           <p>07 99 29 87 78</p>
           <p>chalaltahar396@gmail.com</p>
-          <p>Tahar Chalal</p>
         </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 Tahar Chalal — Tous droits réservés</p>
       </div>
     </footer>
 
-    <a class="floating-call" href="tel:0799298778">Appeler</a>
+    <a class="floating-call" href="tel:0799298778" aria-label="Appeler">
+      <span>Appeler</span>
+    </a>
+
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      window.addEventListener("load", function () {
+        var nav = performance.getEntriesByType("navigation")[0];
+        if (nav && nav.type === "reload") {
+          history.replaceState(null, "", window.location.pathname);
+          window.scrollTo(0, 0);
+        }
+      });
+    </script>
   </body>
 </html>

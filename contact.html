@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devis gratuit — Tahar Chalal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a href="index.html" class="logo">
+          <span class="logo-mark" aria-hidden="true"></span>
+          Taharplombier
+        </a>
+        <nav>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#apropos">À propos</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <a class="phone-btn" href="tel:0799298778">07 99 29 87 78</a>
+      </div>
+    </header>
+
+    <section class="section container contact-page">
+      <div class="section-head">
+        <h2>Demande de devis gratuit</h2>
+        <p class="section-subtitle">
+          Remplissez le formulaire, Tahar Chalal vous répond rapidement.
+        </p>
+      </div>
+
+      <form
+        class="quote-form devis-only"
+        action="https://formsubmit.co/chalaltahar396@gmail.com"
+        method="POST"
+      >
+        <h3>Votre demande</h3>
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nouvelle demande de devis - Tahar Chalal"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="http://localhost:5500/merci.html" />
+        <label>
+          Nom complet
+          <input type="text" name="nom" placeholder="Jean Dupont" required />
+        </label>
+        <label>
+          Téléphone
+          <input
+            type="tel"
+            name="telephone"
+            placeholder="06 00 00 00 00"
+            required
+          />
+        </label>
+        <label>
+          Email
+          <input
+            type="email"
+            name="email"
+            placeholder="jean.dupont@email.fr"
+            required
+          />
+        </label>
+        <label>
+          Description du projet
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Décrivez votre besoin..."
+            required
+          ></textarea>
+        </label>
+        <button type="submit">Envoyer ma demande</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Tahar Chalal</h4>
+          <p>
+            Votre expert plombier. Intervention rapide et service de qualité.
+          </p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <p>Dépannage urgence</p>
+          <p>Installation sanitaires</p>
+          <p>Chauffage</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>07 99 29 87 78</p>
+          <p>chalaltahar396@gmail.com</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 Tahar Chalal — Tous droits réservés</p>
+      </div>
+    </footer>
+
+    <a class="floating-call" href="tel:0799298778" aria-label="Appeler">
+      <span>Appeler</span>
+    </a>
+  </body>
+</html>
